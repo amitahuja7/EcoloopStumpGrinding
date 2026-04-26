@@ -1,0 +1,25 @@
+{
+  "name": "ecoloopstumpgrindingwebsite",
+  "version": "1.0.0",
+  "description": "EcoLoop Stump Grinding - Professional Stump Removal Brisbane",
+  "main": "serve.mjs",
+  "type": "module",
+  "scripts": {
+    "start": "node serve.mjs",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "stump",
+    "grinding",
+    "ecoroot"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^2.2.2",
+    "dotenv": "^17.4.1",
+    "express": "^5.2.1",
+    "nodemailer": "^8.0.4",
+    "twilio": "^6.0.0"
+  }
+}

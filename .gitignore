@@ -1,0 +1,23 @@
+# Environment secrets
+.env
+
+# Node
+node_modules/
+
+# Runtime state (quote counter — created automatically on first run)
+.data/
+
+# Logs
+*.log
+
+# Database
+*.db
+*.db-shm
+*.db-wal
+
+# macOS metadata
+.DS_Store
+**/.DS_Store
+
+# Claude Code local settings
+.claude/

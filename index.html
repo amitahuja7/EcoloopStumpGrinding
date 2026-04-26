@@ -1,0 +1,917 @@
+<!DOCTYPE html>
+<!-- Rebuilt layout: matches Budget Tree reference - 2026-04-19 -->
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="EcoLoop Stump Grinding provides professional stump grinding and stump removal services across Greater Brisbane. Fast quotes, reliable service, and qualified arborists." />
+  <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1" />
+  <meta name="author" content="EcoLoop Stump Grinding" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="EcoLoop Stump Grinding - Brisbane Stump Removal Experts" />
+  <meta property="og:description" content="Professional stump grinding across Greater Brisbane. Fast, reliable, and affordable with free quotes." />
+  <meta property="og:url" content="https://www.ecoloopstumpgrinding.com.au/" />
+  <meta property="og:image" content="https://www.ecoloopstumpgrinding.com.au/brand-assets/logoPNG.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="EcoLoop Stump Grinding - Brisbane Stump Removal Experts" />
+  <meta name="twitter:description" content="Fast, professional stump removal and grinding services in Brisbane." />
+  <meta name="twitter:image" content="https://www.ecoloopstumpgrinding.com.au/brand-assets/logoPNG.png" />
+  <link rel="icon" type="image/png" href="brand-assets/logoPNG.png" />
+  <link rel="canonical" href="https://www.ecoloopstumpgrinding.com.au/" />
+  <title>EcoLoop Stump Grinding — Brisbane's Trusted Stump Grinding Experts</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            forest: {
+              50:  '#f0f7f2',
+              100: '#d9ece0',
+              200: '#b0d6bc',
+              300: '#7db898',
+              400: '#4e9870',
+              500: '#2d7a52',
+              600: '#1B4D2E',
+              700: '#153d24',
+              800: '#0e2c1a',
+              900: '#071610',
+            },
+            gold: {
+              300: '#f0d080',
+              400: '#E8C547',
+              500: '#D4A853',
+              600: '#B8892E',
+            },
+            cream: '#F7F2EA',
+            bark:  '#3D2B1F',
+          },
+          fontFamily: {
+            display: ['Playfair Display', 'Georgia', 'serif'],
+            body:    ['Inter', 'system-ui', 'sans-serif'],
+          },
+        }
+      }
+    }
+  </script>
+
+  <style>
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body { font-family: 'Inter', system-ui, sans-serif; background: #fff; color: #1A1A1A; margin: 0; }
+
+    body::before {
+      content: '';
+      position: fixed; inset: 0; pointer-events: none; z-index: 9999; opacity: 0.018;
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 512 512' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
+    }
+
+    .font-display { font-family: 'Playfair Display', Georgia, serif; }
+    .brand-logo { width: 180px; height: auto; display: block; }
+
+    #top-bar { background: #1B4D2E; padding: 0.5rem 1.5rem; }
+
+    nav {
+      position: sticky; top: 0; z-index: 100;
+      background: #fff;
+      border-bottom: 1px solid #e8e0d5;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+    }
+
+    .hero-section { position: relative; min-height: 620px; display: flex; align-items: center; overflow: hidden; }
+    .hero-bg-img {
+      position: absolute; inset: 0;
+      background: url('brand-assets/StumpGrinding01.png') center center / cover no-repeat;
+      z-index: 0;
+    }
+    .hero-overlay {
+      position: absolute; inset: 0;
+      background: linear-gradient(90deg, rgba(7,22,16,0.88) 0%, rgba(14,44,26,0.72) 55%, rgba(14,44,26,0.3) 100%);
+      z-index: 1;
+    }
+
+    .btn-gold {
+      display: inline-flex; align-items: center; gap: 0.4rem;
+      background: linear-gradient(135deg, #D4A853 0%, #E8C547 60%, #D4A853 100%);
+      background-size: 200% 200%;
+      color: #0e2c1a; font-weight: 700; font-size: 0.95rem;
+      padding: 0.75rem 1.75rem; border-radius: 5px; border: none;
+      cursor: pointer; text-decoration: none; letter-spacing: -0.01em;
+      transition: background-position 0.4s ease, transform 0.2s ease, box-shadow 0.2s ease;
+      box-shadow: 0 4px 14px rgba(212,168,83,0.45), 0 1px 3px rgba(0,0,0,0.18);
+    }
+    .btn-gold:hover { background-position: 100% 100%; transform: translateY(-2px); box-shadow: 0 8px 24px rgba(212,168,83,0.55), 0 2px 6px rgba(0,0,0,0.2); }
+    .btn-gold:active { transform: translateY(0); }
+    .btn-gold:focus-visible { outline: 3px solid #E8C547; outline-offset: 3px; }
+
+    .btn-outline-white {
+      display: inline-flex; align-items: center; gap: 0.4rem;
+      background: transparent; color: #fff; font-weight: 600; font-size: 0.95rem;
+      padding: 0.75rem 1.75rem; border-radius: 5px; border: 2px solid rgba(255,255,255,0.5);
+      cursor: pointer; text-decoration: none;
+      transition: border-color 0.2s ease, background 0.2s ease, transform 0.2s ease;
+    }
+    .btn-outline-white:hover { border-color: #fff; background: rgba(255,255,255,0.08); transform: translateY(-1px); }
+    .btn-outline-white:focus-visible { outline: 3px solid #E8C547; outline-offset: 3px; }
+
+    .btn-green {
+      display: inline-flex; align-items: center; gap: 0.4rem;
+      background: #1B4D2E; color: #fff; font-weight: 700; font-size: 0.95rem;
+      padding: 0.75rem 1.75rem; border-radius: 5px; border: none;
+      cursor: pointer; text-decoration: none;
+      transition: background 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
+      box-shadow: 0 4px 14px rgba(27,77,46,0.3);
+    }
+    .btn-green:hover { background: #153d24; transform: translateY(-2px); box-shadow: 0 8px 24px rgba(27,77,46,0.4); }
+    .btn-green:active { transform: translateY(0); }
+    .btn-green:focus-visible { outline: 3px solid #1B4D2E; outline-offset: 3px; }
+
+    .form-input {
+      width: 100%; padding: 0.7rem 1rem;
+      background: #fff; border: 1.5px solid #ddd5c8;
+      border-radius: 5px; font-family: 'Inter', sans-serif;
+      font-size: 0.93rem; color: #1A1A1A;
+      transition: border-color 0.2s ease, box-shadow 0.2s ease; outline: none;
+    }
+    .form-input:focus { border-color: #1B4D2E; box-shadow: 0 0 0 3px rgba(27,77,46,0.1); }
+    .form-input::placeholder { color: #aaa; }
+    .form-label { display: block; font-size: 0.82rem; font-weight: 600; color: #3D2B1F; margin-bottom: 0.3rem; letter-spacing: 0.01em; }
+
+    .section-label {
+      display: inline-block;
+      color: #2d7a52; font-size: 0.78rem; font-weight: 700;
+      letter-spacing: 0.1em; text-transform: uppercase; margin-bottom: 0.6rem;
+    }
+
+    .trust-bar { background: #f8f5f0; border-top: 1px solid #e8e0d5; border-bottom: 1px solid #e8e0d5; }
+
+    .faq-item { border-bottom: 1px solid #e8e0d5; }
+    .faq-btn {
+      width: 100%; text-align: left; background: none; border: none;
+      padding: 1.25rem 0; cursor: pointer;
+      display: flex; justify-content: space-between; align-items: center;
+      font-family: 'Inter', sans-serif; font-size: 1rem; font-weight: 600; color: #1A1A1A;
+      transition: color 0.2s ease;
+    }
+    .faq-btn:hover { color: #1B4D2E; }
+    .faq-btn:focus-visible { outline: 2px solid #1B4D2E; outline-offset: 2px; }
+    .faq-content { display: none; padding-bottom: 1.25rem; color: #5a4d42; font-size: 0.95rem; line-height: 1.75; }
+    .faq-content.open { display: block; }
+    .faq-icon { flex-shrink: 0; transition: transform 0.25s ease; }
+    .faq-icon.open { transform: rotate(45deg); }
+
+    .stat-card {
+      background: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.15);
+      border-radius: 10px; padding: 1.5rem; text-align: center;
+    }
+
+    .check-item { display: flex; align-items: flex-start; gap: 0.75rem; margin-bottom: 0.9rem; }
+    .check-icon {
+      width: 22px; height: 22px; border-radius: 50%;
+      background: #1B4D2E; display: flex; align-items: center; justify-content: center; flex-shrink: 0; margin-top: 1px;
+    }
+
+    @keyframes fadeUp { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+    @keyframes spin { to { transform: rotate(360deg); } }
+    .fade-up { animation: fadeUp 0.6s cubic-bezier(0.22, 1, 0.36, 1) both; }
+    .delay-1 { animation-delay: 0.1s; }
+    .delay-2 { animation-delay: 0.2s; }
+    .delay-3 { animation-delay: 0.3s; }
+    .delay-4 { animation-delay: 0.4s; }
+
+    @media (max-width: 768px) {
+      .hero-overlay { background: linear-gradient(180deg, rgba(7,22,16,0.85) 0%, rgba(14,44,26,0.80) 100%); }
+      .hide-mobile { display: none !important; }
+
+      #top-bar { padding: 0.45rem 1rem; }
+      .top-bar-inner { align-items: flex-start !important; gap: 0.6rem !important; }
+      .top-bar-links { width: 100%; flex-direction: column; align-items: flex-start !important; gap: 0.35rem !important; }
+      .top-bar-links a { font-size: 0.76rem !important; line-height: 1.35; }
+      .top-bar-links a[href^="mailto"] { word-break: break-all; }
+      .top-cta { align-self: flex-start; font-size: 0.75rem !important; padding: 0.42rem 0.95rem !important; }
+
+      .main-nav-inner { height: 60px !important; padding: 0 1rem !important; }
+      .brand-logo { width: 150px !important; }
+      .mobile-call-btn { display: none !important; }
+
+      .hero-section { min-height: 520px; }
+      .hero-content-wrap { padding: 3rem 1rem 3.5rem !important; }
+      .hero-title { font-size: clamp(1.95rem, 9vw, 2.55rem) !important; line-height: 1.08 !important; }
+      .hero-copy { font-size: 0.94rem !important; line-height: 1.6 !important; margin-bottom: 1.4rem !important; }
+      .hero-cta-group { flex-direction: column; gap: 0.75rem !important; margin-bottom: 1.6rem !important; }
+      .hero-cta-group a { width: 100%; justify-content: center; }
+    }
+  </style>
+</head>
+<body>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "EcoLoop Stump Grinding",
+  "url": "https://www.ecoloopstumpgrinding.com.au/",
+  "image": "https://www.ecoloopstumpgrinding.com.au/brand-assets/logoPNG.png",
+  "telephone": "+61 485 666 610",
+  "email": "sales@ecoloopstumpgrinding.com.au",
+  "areaServed": "Greater Brisbane, QLD",
+  "address": {
+    "@type": "PostalAddress",
+    "addressRegion": "QLD",
+    "addressCountry": "AU"
+  },
+  "sameAs": [],
+  "serviceType": [
+    "Stump grinding",
+    "Stump removal",
+    "Tree service"
+  ]
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How much does stump removal cost?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Pricing depends on stump diameter, depth, location, and access. We provide a free fixed-price quote before work starts."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Are you fully insured?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. EcoLoop Stump Grinding holds public liability insurance and full equipment coverage for every job."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can you grind multiple stumps in one visit?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. We can remove multiple stumps in one visit and often provide discounted rates for multi-stump jobs."
+      }
+    }
+  ]
+}
+</script>
+
+<!-- TOP CONTACT BAR -->
+<div id="top-bar">
+  <div class="top-bar-inner" style="max-width:1200px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:0.5rem;">
+    <div class="top-bar-links" style="display:flex;align-items:center;gap:1.5rem;">
+      <a href="tel:0485666610" style="display:flex;align-items:center;gap:0.4rem;color:rgba(255,255,255,0.85);text-decoration:none;font-size:0.82rem;font-weight:500;" onmouseover="this.style.color='#D4A853'" onmouseout="this.style.color='rgba(255,255,255,0.85)'">
+        <svg width="13" height="13" fill="currentColor" viewBox="0 0 24 24"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+        0485 666 610
+      </a>
+      <a href="mailto:sales@ecoloopstumpgrinding.com.au" style="display:flex;align-items:center;gap:0.4rem;color:rgba(255,255,255,0.85);text-decoration:none;font-size:0.82rem;font-weight:500;" onmouseover="this.style.color='#D4A853'" onmouseout="this.style.color='rgba(255,255,255,0.85)'">
+        <svg width="13" height="13" fill="currentColor" viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+        sales@ecoloopstumpgrinding.com.au
+      </a>
+    </div>
+    <a href="#quote" class="btn-gold top-cta" style="font-size:0.78rem;padding:0.45rem 1.1rem;">Get Free Quote</a>
+  </div>
+</div>
+
+<!-- NAVIGATION -->
+<nav>
+  <div class="main-nav-inner" style="max-width:1200px;margin:0 auto;padding:0 1.5rem;display:flex;align-items:center;justify-content:space-between;height:68px;">
+    <a href="#" style="display:flex;align-items:center;gap:0.6rem;text-decoration:none;" aria-label="EcoLoop Stump Grinding home">
+      <img class="brand-logo" src="brand-assets/logoPNG.png" alt="EcoLoop Stump Grinding" />
+    </a>
+    <div style="display:flex;align-items:center;gap:2rem;" class="hide-mobile">
+      <a href="#quote" style="font-size:0.9rem;font-weight:500;color:#3D2B1F;text-decoration:none;" onmouseover="this.style.color='#1B4D2E'" onmouseout="this.style.color='#3D2B1F'">Get Quote</a>
+      <a href="#process" style="font-size:0.9rem;font-weight:500;color:#3D2B1F;text-decoration:none;" onmouseover="this.style.color='#1B4D2E'" onmouseout="this.style.color='#3D2B1F'">Our Process</a>
+      <a href="#faq" style="font-size:0.9rem;font-weight:500;color:#3D2B1F;text-decoration:none;" onmouseover="this.style.color='#1B4D2E'" onmouseout="this.style.color='#3D2B1F'">FAQ</a>
+      <a href="#quote" style="font-size:0.9rem;font-weight:500;color:#3D2B1F;text-decoration:none;" onmouseover="this.style.color='#1B4D2E'" onmouseout="this.style.color='#3D2B1F'">Contact</a>
+    </div>
+    <a href="tel:0485666610" class="btn-green mobile-call-btn" style="font-size:0.88rem;padding:0.6rem 1.4rem;">
+      <svg width="15" height="15" fill="currentColor" viewBox="0 0 24 24"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+      Call Now
+    </a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero-section">
+  <div class="hero-bg-img"></div>
+  <div class="hero-overlay"></div>
+  <div aria-hidden="true" style="position:absolute;inset:0;z-index:1;pointer-events:none;">
+    <div style="position:absolute;bottom:-80px;right:-80px;width:500px;height:500px;border-radius:50%;background:radial-gradient(circle,rgba(45,122,82,0.15),transparent 70%);"></div>
+  </div>
+  <div class="hero-content-wrap" style="max-width:1200px;margin:0 auto;padding:5rem 1.5rem;position:relative;z-index:2;width:100%;">
+    <div style="max-width:640px;">
+      <p style="color:#D4A853;font-size:0.78rem;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;margin-bottom:1rem;" class="fade-up">Brisbane's #1 Stump Grinding Service</p>
+      <h1 class="fade-up delay-1 hero-title" style="font-family:'Playfair Display',serif;font-size:clamp(2.4rem,5vw,3.8rem);font-weight:800;color:#fff;line-height:1.1;letter-spacing:-0.03em;margin-bottom:1.25rem;">
+        EcoLoop<br/>
+        <span style="color:#D4A853;">Stump Grinding</span><br/>
+        Services
+      </h1>
+      <p class="fade-up delay-2 hero-copy" style="color:rgba(247,242,234,0.82);font-size:1.05rem;line-height:1.75;margin-bottom:2rem;max-width:520px;">
+        Professional stump grinding across Greater Brisbane. Fast, reliable, and affordable — with a <strong style="color:#fff;">free, no-obligation quote</strong>.
+      </p>
+      <div class="fade-up delay-3 hero-cta-group" style="display:flex;flex-wrap:wrap;gap:1rem;margin-bottom:3rem;">
+        <a href="#quote" class="btn-gold" style="font-size:1rem;padding:0.875rem 2rem;">
+          <svg width="17" height="17" fill="currentColor" viewBox="0 0 24 24"><path d="M20 4H4v2l8 5 8-5V4zM4 8v12h16V8l-8 5-8-5z"/></svg>
+          Get My Free Quote &rarr;
+        </a>
+        <a href="tel:0485666610" class="btn-outline-white" style="font-size:1rem;padding:0.875rem 2rem;">
+          <svg width="17" height="17" fill="currentColor" viewBox="0 0 24 24"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+          Call 0485 666 610
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TRUST BADGES BAR -->
+<div class="trust-bar">
+  <div style="max-width:1200px;margin:0 auto;padding:1.1rem 1.5rem;display:flex;align-items:center;justify-content:center;flex-wrap:wrap;gap:2.5rem;">
+    <div style="display:flex;align-items:center;gap:0.6rem;">
+      <svg width="28" height="28" fill="#1B4D2E" viewBox="0 0 24 24"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm-2 16l-4-4 1.41-1.41L10 14.17l6.59-6.59L18 9l-8 8z"/></svg>
+      <div>
+        <p style="font-size:0.7rem;font-weight:700;color:#1B4D2E;text-transform:uppercase;letter-spacing:0.06em;line-height:1;">AQF Level 3 &amp; 5</p>
+        <p style="font-size:0.68rem;color:#6b5c52;line-height:1.3;margin-top:1px;">Qualified Arborists</p>
+      </div>
+    </div>
+    <div style="width:1px;height:32px;background:#ddd5c8;"></div>
+    <div style="display:flex;align-items:center;gap:0.6rem;">
+      <svg width="28" height="28" fill="#1B4D2E" viewBox="0 0 24 24"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4z"/></svg>
+      <div>
+        <p style="font-size:0.7rem;font-weight:700;color:#1B4D2E;text-transform:uppercase;letter-spacing:0.06em;line-height:1;">Fully Insured</p>
+        <p style="font-size:0.68rem;color:#6b5c52;line-height:1.3;margin-top:1px;">Public Liability &amp; Equipment</p>
+      </div>
+    </div>
+    <div style="width:1px;height:32px;background:#ddd5c8;"></div>
+    <div style="display:flex;align-items:center;gap:0.6rem;">
+      <svg width="28" height="28" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" fill="#1B4D2E" opacity="0.15"/><path d="M9 12l2 2 4-4" stroke="#1B4D2E" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      <div>
+        <p style="font-size:0.7rem;font-weight:700;color:#1B4D2E;text-transform:uppercase;letter-spacing:0.06em;line-height:1;">AS4373 Compliant</p>
+        <p style="font-size:0.68rem;color:#6b5c52;line-height:1.3;margin-top:1px;">Australian Standards</p>
+      </div>
+    </div>
+    <div style="width:1px;height:32px;background:#ddd5c8;"></div>
+    <div style="display:flex;align-items:center;gap:0.6rem;">
+      <svg width="28" height="28" fill="#D4A853" viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+      <div>
+        <p style="font-size:0.7rem;font-weight:700;color:#1B4D2E;text-transform:uppercase;letter-spacing:0.06em;line-height:1;">Free Quotes</p>
+        <p style="font-size:0.68rem;color:#6b5c52;line-height:1.3;margin-top:1px;">No Obligation, No Deposit</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- HOW IT WORKS -->
+<section id="process" style="background:#f8f5f0;padding:5rem 1.5rem;">
+  <div style="max-width:1200px;margin:0 auto;">
+    <div style="text-align:center;margin-bottom:3.5rem;">
+      <p class="section-label">Simple Process</p>
+      <h2 style="font-family:'Playfair Display',serif;font-size:clamp(1.9rem,3.5vw,2.8rem);font-weight:800;color:#0e2c1a;letter-spacing:-0.03em;line-height:1.15;margin-bottom:0.75rem;">How It Works</h2>
+      <p style="color:#6b5c52;line-height:1.7;max-width:560px;margin:0 auto;font-size:1rem;">Request your quote, receive a fixed price, and schedule your job. This can all be done within 24 hours.</p>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:2rem;max-width:1100px;margin:0 auto;" class="md-grid-3">
+      <!-- Step 1 -->
+      <div style="text-align:center;">
+        <div style="width:56px;height:56px;border-radius:50%;background:linear-gradient(135deg,#1B4D2E,#2d7a52);display:flex;align-items:center;justify-content:center;margin:0 auto 1rem;box-shadow:0 6px 20px rgba(27,77,46,0.3);">
+          <span style="font-family:'Playfair Display',serif;font-size:1.3rem;font-weight:800;color:#D4A853;">1</span>
+        </div>
+        <h3 style="font-family:'Playfair Display',serif;font-size:1.05rem;font-weight:700;color:#0e2c1a;margin-bottom:0.5rem;letter-spacing:-0.02em;">Request Your Free Quote</h3>
+        <p style="color:#6b5c52;font-size:0.88rem;line-height:1.7;">Fill in the form or call us. No obligation.</p>
+      </div>
+      <!-- Step 2 -->
+      <div style="text-align:center;">
+        <div style="width:56px;height:56px;border-radius:50%;background:linear-gradient(135deg,#1B4D2E,#2d7a52);display:flex;align-items:center;justify-content:center;margin:0 auto 1rem;box-shadow:0 6px 20px rgba(27,77,46,0.3);">
+          <span style="font-family:'Playfair Display',serif;font-size:1.3rem;font-weight:800;color:#D4A853;">2</span>
+        </div>
+        <h3 style="font-family:'Playfair Display',serif;font-size:1.05rem;font-weight:700;color:#0e2c1a;margin-bottom:0.5rem;letter-spacing:-0.02em;">Receive Fixed Price Quote</h3>
+        <p style="color:#6b5c52;font-size:0.88rem;line-height:1.7;">We review your details and provide a clear fixed-price quote.</p>
+      </div>
+      <!-- Step 3 -->
+      <div style="text-align:center;">
+        <div style="width:56px;height:56px;border-radius:50%;background:linear-gradient(135deg,#1B4D2E,#2d7a52);display:flex;align-items:center;justify-content:center;margin:0 auto 1rem;box-shadow:0 6px 20px rgba(27,77,46,0.3);">
+          <span style="font-family:'Playfair Display',serif;font-size:1.3rem;font-weight:800;color:#D4A853;">3</span>
+        </div>
+        <h3 style="font-family:'Playfair Display',serif;font-size:1.05rem;font-weight:700;color:#0e2c1a;margin-bottom:0.5rem;letter-spacing:-0.02em;">Schedule the Job</h3>
+        <p style="color:#6b5c52;font-size:0.88rem;line-height:1.7;">Pick a suitable time and we lock in your booking.</p>
+      </div>
+    </div>
+    <div style="text-align:center;margin-top:2.5rem;">
+      <a href="#quote" class="btn-gold" style="font-size:1rem;padding:0.875rem 2.25rem;">Start with a Free Quote</a>
+    </div>
+  </div>
+</section>
+
+<!-- QUOTE FORM -->
+<section id="quote" style="background:linear-gradient(135deg,#1B4D2E 0%,#153d24 100%);padding:5rem 1.5rem;position:relative;overflow:hidden;">
+  <div aria-hidden="true" style="position:absolute;top:-120px;left:-120px;width:420px;height:420px;border-radius:50%;background:radial-gradient(circle,rgba(212,168,83,0.14),transparent 70%);"></div>
+  <div aria-hidden="true" style="position:absolute;bottom:-120px;right:-120px;width:420px;height:420px;border-radius:50%;background:radial-gradient(circle,rgba(78,152,112,0.2),transparent 70%);"></div>
+  <div style="max-width:1200px;margin:0 auto;">
+    <div style="text-align:center;margin-bottom:3rem;position:relative;z-index:1;">
+      <p class="section-label" style="color:#D4A853;">Ready to Get Started?</p>
+      <h2 style="font-family:'Playfair Display',serif;font-size:clamp(1.9rem,3.5vw,2.8rem);font-weight:800;color:#fff;letter-spacing:-0.03em;line-height:1.15;margin-bottom:0.75rem;">Request Your Free Quote</h2>
+      <p style="color:rgba(247,242,234,0.82);line-height:1.7;max-width:500px;margin:0 auto;font-size:1rem;">
+        Fill in the form and we'll send your fixed-price quote, then lock in your booking within 24 hours. Prefer to talk?<br/>
+        Call us on <a href="tel:0485666610" style="color:#D4A853;font-weight:700;text-decoration:none;">0485 666 610</a>
+      </p>
+    </div>
+    <div style="display:grid;grid-template-columns:280px 1fr;gap:2.5rem;max-width:950px;margin:0 auto;align-items:start;position:relative;z-index:1;" class="quote-grid">
+      <!-- Left contact card -->
+      <div style="background:#1B4D2E;border-radius:12px;padding:2rem;color:#fff;">
+        <h3 style="font-family:'Playfair Display',serif;font-size:1.2rem;font-weight:700;margin-bottom:1.5rem;letter-spacing:-0.02em;">Contact Details</h3>
+        <div style="display:flex;flex-direction:column;gap:1rem;margin-bottom:2rem;">
+          <div style="display:flex;align-items:flex-start;gap:0.75rem;">
+            <svg width="18" height="18" fill="#D4A853" viewBox="0 0 24 24" style="flex-shrink:0;margin-top:1px;"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+            <div>
+              <p style="font-size:0.72rem;color:rgba(212,168,83,0.8);font-weight:700;text-transform:uppercase;letter-spacing:0.07em;margin-bottom:0.2rem;">Call</p>
+              <a href="tel:0485666610" style="color:#fff;text-decoration:none;font-size:0.95rem;font-weight:600;">0485 666 610</a>
+            </div>
+          </div>
+          <div style="display:flex;align-items:flex-start;gap:0.75rem;">
+            <svg width="18" height="18" fill="#D4A853" viewBox="0 0 24 24" style="flex-shrink:0;margin-top:1px;"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+            <div>
+              <p style="font-size:0.72rem;color:rgba(212,168,83,0.8);font-weight:700;text-transform:uppercase;letter-spacing:0.07em;margin-bottom:0.2rem;">Email</p>
+              <a href="mailto:sales@ecoloopstumpgrinding.com.au" style="color:#fff;text-decoration:none;font-size:0.85rem;font-weight:500;word-break:break-all;">sales@ecoloopstumpgrinding.com.au</a>
+            </div>
+          </div>
+        </div>
+        <div style="border-top:1px solid rgba(255,255,255,0.12);padding-top:1.25rem;margin-bottom:1.25rem;">
+          <p style="font-size:0.72rem;color:rgba(212,168,83,0.8);font-weight:700;text-transform:uppercase;letter-spacing:0.07em;margin-bottom:0.6rem;">Response Time</p>
+          <div style="display:flex;align-items:center;gap:0.5rem;">
+            <div style="width:8px;height:8px;border-radius:50%;background:#4e9870;box-shadow:0 0 6px rgba(78,152,112,0.8);flex-shrink:0;"></div>
+            <p style="color:rgba(255,255,255,0.8);font-size:0.85rem;line-height:1.4;">Quote and scheduling completed within <strong style="color:#D4A853;">24 hours</strong></p>
+          </div>
+        </div>
+        <div style="border-top:1px solid rgba(255,255,255,0.12);padding-top:1.25rem;">
+          <p style="font-size:0.72rem;color:rgba(212,168,83,0.8);font-weight:700;text-transform:uppercase;letter-spacing:0.07em;margin-bottom:0.75rem;">Follow Us</p>
+          <div style="display:flex;gap:0.75rem;">
+            <a href="#" style="width:36px;height:36px;border-radius:8px;background:rgba(255,255,255,0.1);display:flex;align-items:center;justify-content:center;color:rgba(255,255,255,0.8);text-decoration:none;" aria-label="Facebook" onmouseover="this.style.background='rgba(212,168,83,0.25)'" onmouseout="this.style.background='rgba(255,255,255,0.1)'">
+              <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
+            </a>
+            <a href="#" style="width:36px;height:36px;border-radius:8px;background:rgba(255,255,255,0.1);display:flex;align-items:center;justify-content:center;color:rgba(255,255,255,0.8);text-decoration:none;" aria-label="Instagram" onmouseover="this.style.background='rgba(212,168,83,0.25)'" onmouseout="this.style.background='rgba(255,255,255,0.1)'">
+              <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right form -->
+      <div style="background:#f8f5f0;border-radius:12px;padding:2.5rem;border:1px solid #e8e0d5;box-shadow:0 16px 40px rgba(7,22,16,0.28);">
+        <form onsubmit="handleQuoteSubmit(event)" novalidate>
+          <!-- Row 1: Name + Phone -->
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin-bottom:1rem;" class="form-2col">
+            <div>
+              <label class="form-label" for="q-name">Your Name *</label>
+              <input class="form-input" type="text" id="q-name" placeholder="Jane Smith" required autocomplete="name" />
+            </div>
+            <div>
+              <label class="form-label" for="q-phone">Phone Number *</label>
+              <input class="form-input" type="tel" id="q-phone" placeholder="04XX XXX XXX" required autocomplete="tel" />
+            </div>
+          </div>
+
+          <!-- Row 2: Email + Number of stumps -->
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin-bottom:1rem;" class="form-2col">
+            <div>
+              <label class="form-label" for="q-email">Email Address *</label>
+              <input class="form-input" type="email" id="q-email" placeholder="jane@email.com" required autocomplete="email" />
+            </div>
+            <div>
+              <label class="form-label" for="q-stump-count">Number of Stumps *</label>
+              <select class="form-input" id="q-stump-count" required onchange="renderStumpDiameterFields()">
+                <option value="">&#8212; Select number of stumps &#8212;</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="more_than_5">More than 5</option>
+              </select>
+            </div>
+          </div>
+
+          <div id="q-stump-size-fields" style="margin-bottom:1rem;"></div>
+          <p id="q-stump-size-note" style="display:none;font-size:0.78rem;color:#6b5c52;margin:-0.5rem 0 1rem 0;line-height:1.6;">For more than 5 stumps, please share the approximate diameters in Additional Details.</p>
+
+          <!-- Property Address (plain text) -->
+          <div style="margin-bottom:1rem;">
+            <label class="form-label" for="q-address">Property Address *</label>
+            <input class="form-input" type="text" id="q-address" placeholder="e.g. 12 Smith St, Paddington QLD 4064" required autocomplete="street-address" />
+          </div>
+
+          <!-- Access type -->
+          <div style="margin-bottom:1rem;">
+            <label class="form-label" for="q-access-select">Machine Access to Stump *
+              <span style="font-size:0.74rem;font-weight:400;color:#9e9285;display:block;margin-top:0.1rem;">Our machinery requires at least 1m wide access</span>
+            </label>
+            <select class="form-input" id="q-access-select" name="q-access" required>
+              <option value="">&#8212; Select access type &#8212;</option>
+              <option value="open">Open Access &#8212; more than 1m wide</option>
+              <option value="restricted">Restricted &#8212; 600mm to 1m wide</option>
+              <option value="very_restricted">Very Restricted &#8212; under 600mm</option>
+              <option value="unsure">Not Sure &#8212; let our team assess on site</option>
+            </select>
+          </div>
+
+          <!-- Photo upload -->
+          <div style="margin-bottom:1rem;">
+            <label class="form-label" for="q-photos">Photos of Your Stump(s)
+              <span style="font-size:0.74rem;font-weight:400;color:#9e9285;margin-left:0.4rem;">Optional — helps us provide a more accurate quote (max 5, JPG/PNG)</span>
+            </label>
+            <label for="q-photos" id="q-photo-label" style="display:flex;align-items:center;justify-content:center;gap:0.75rem;border:1.5px dashed #c5b9ad;border-radius:6px;padding:1.2rem;cursor:pointer;background:#fff;transition:border-color 0.2s ease;min-height:72px;">
+              <svg width="22" height="22" fill="#9e9285" viewBox="0 0 24 24"><path d="M21 19V5c0-1.1-.9-2-2-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2zM8.5 13.5l2.5 3.01L14.5 12l4.5 6H5l3.5-4.5z"/></svg>
+              <div style="text-align:center;">
+                <p id="q-photo-text" style="font-size:0.88rem;font-weight:600;color:#5a4d42;margin-bottom:0.1rem;">Click to upload photos</p>
+                <p style="font-size:0.74rem;color:#9e9285;">Or drag and drop. JPG, PNG up to 10MB each.</p>
+              </div>
+            </label>
+            <input type="file" id="q-photos" accept="image/jpeg,image/png,image/webp" multiple style="display:none;" onchange="handlePhotoSelect(this)" />
+            <div id="q-photo-previews" style="display:none;margin-top:0.75rem;display:flex;flex-wrap:wrap;gap:0.5rem;"></div>
+          </div>
+
+          <!-- Message -->
+          <div style="margin-bottom:1.5rem;">
+            <label class="form-label" for="q-message">Additional Details</label>
+            <textarea class="form-input" id="q-message" rows="3" placeholder="Number of stumps, approximate size, any other details..." style="resize:vertical;"></textarea>
+          </div>
+
+          <button type="submit" class="btn-gold" style="width:100%;justify-content:center;font-size:1rem;padding:0.95rem;">
+            <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"/></svg>
+            Submit My Quote Request
+          </button>
+          <p style="text-align:center;font-size:0.78rem;color:#9e9285;margin-top:0.75rem;">
+            No deposit. No obligation. You'll receive an SMS confirmation immediately.
+          </p>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section id="faq" style="background:#f8f5f0;padding:5rem 1.5rem;">
+  <div style="max-width:860px;margin:0 auto;">
+    <div style="text-align:center;margin-bottom:3rem;">
+      <p class="section-label">Common Questions</p>
+      <h2 style="font-family:'Playfair Display',serif;font-size:clamp(1.9rem,3.5vw,2.8rem);font-weight:800;color:#0e2c1a;letter-spacing:-0.03em;line-height:1.15;margin-bottom:0.5rem;">Stump Removal FAQs</h2>
+    </div>
+    <div>
+      <div class="faq-item">
+        <button class="faq-btn" onclick="toggleFaq(this)" aria-expanded="false">
+          <span>How much does stump removal cost?</span>
+          <svg class="faq-icon" width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg>
+        </button>
+        <div class="faq-content">Pricing depends on the stump's diameter, depth, location, and access. Stumps under 350mm with clear open access typically receive our most competitive rate. We provide a free, no-obligation fixed-price quote before any work begins — so there are no surprises.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-btn" onclick="toggleFaq(this)" aria-expanded="false">
+          <span>What happens to the stump and wood chips after grinding?</span>
+          <svg class="faq-icon" width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg>
+        </button>
+        <div class="faq-content">We grind the stump below ground level and backfill with the resulting wood chips. You can choose to keep the chips as garden mulch, or we can remove them from the site for an additional fee. We always leave your property clean and tidy.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-btn" onclick="toggleFaq(this)" aria-expanded="false">
+          <span>Do you need access through a gate or side passage?</span>
+          <svg class="faq-icon" width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg>
+        </button>
+        <div class="faq-content">Our machinery typically requires at least 1m of clearance to access a backyard. For tighter access (600mm–1m) we may be able to use smaller equipment, and for very restricted access (under 600mm) we'll assess on-site before quoting. When requesting your quote, just select your access type in the form.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-btn" onclick="toggleFaq(this)" aria-expanded="false">
+          <span>Are you fully insured?</span>
+          <svg class="faq-icon" width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg>
+        </button>
+        <div class="faq-content">Yes — EcoLoop Stump Grinding holds public liability insurance and full equipment coverage on every job. You can request our certificate of currency before we start work.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-btn" onclick="toggleFaq(this)" aria-expanded="false">
+          <span>Can you grind multiple stumps in one visit?</span>
+          <svg class="faq-icon" width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg>
+        </button>
+        <div class="faq-content">Absolutely. We can handle multiple stumps in a single visit and offer discounted rates when grinding more than one stump at the same property. Just mention the number of stumps when requesting your quote.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-btn" onclick="toggleFaq(this)" aria-expanded="false">
+          <span>How quickly can you get to me?</span>
+          <svg class="faq-icon" width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg>
+        </button>
+        <div class="faq-content">In most cases, we can complete the quote and scheduling process within 24 hours. For urgent situations, call us directly on 0485 666 610 and we'll do our best to prioritize your job.</div>
+      </div>
+      <div class="faq-item" style="border-bottom:none;">
+        <button class="faq-btn" onclick="toggleFaq(this)" aria-expanded="false">
+          <span>Do I need to be home during the stump removal?</span>
+          <svg class="faq-icon" width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg>
+        </button>
+        <div class="faq-content">Not necessarily. As long as we have safe access to the stump, the work can be completed without you being present. We'll send you a confirmation SMS when the job is done and the site has been cleaned up.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer style="background:#071610;padding:3.5rem 1.5rem 2rem;">
+  <div style="max-width:1200px;margin:0 auto;">
+    <div style="display:grid;grid-template-columns:1.4fr 1fr 1.2fr 1.2fr;gap:2.5rem;margin-bottom:3rem;" class="footer-grid">
+      <div>
+        <div style="display:flex;align-items:center;gap:0.6rem;margin-bottom:1rem;">
+          <div style="width:38px;height:38px;border-radius:9px;background:linear-gradient(135deg,#1B4D2E,#2d7a52);display:flex;align-items:center;justify-content:center;">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
+              <ellipse cx="12" cy="16" rx="7" ry="3" fill="#D4A853" opacity="0.9"/>
+              <rect x="9" y="7" width="6" height="9" rx="1" fill="#E8C547"/>
+              <ellipse cx="12" cy="7" rx="5" ry="2" fill="#D4A853"/>
+              <line x1="7" y1="18" x2="5" y2="21" stroke="#D4A853" stroke-width="1.5" stroke-linecap="round"/>
+              <line x1="12" y1="19" x2="12" y2="22" stroke="#D4A853" stroke-width="1.5" stroke-linecap="round"/>
+              <line x1="17" y1="18" x2="19" y2="21" stroke="#D4A853" stroke-width="1.5" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <div>
+            <span style="font-family:'Playfair Display',serif;font-weight:700;color:#fff;font-size:1rem;letter-spacing:-0.02em;display:block;">EcoLoop</span>
+            <span style="font-size:0.62rem;font-weight:700;color:#4e9870;letter-spacing:0.08em;text-transform:uppercase;">Stump Grinding Services</span>
+          </div>
+        </div>
+        <p style="color:rgba(247,242,234,0.5);font-size:0.85rem;line-height:1.7;max-width:230px;margin-bottom:1.25rem;">Brisbane's trusted stump removal specialists. Professional, insured, and fully qualified.</p>
+        <div style="display:flex;gap:0.6rem;">
+          <a href="#" style="width:34px;height:34px;border-radius:7px;background:rgba(255,255,255,0.07);display:flex;align-items:center;justify-content:center;color:rgba(255,255,255,0.6);text-decoration:none;" aria-label="Facebook" onmouseover="this.style.background='rgba(212,168,83,0.2)';this.style.color='#D4A853'" onmouseout="this.style.background='rgba(255,255,255,0.07)';this.style.color='rgba(255,255,255,0.6)'">
+            <svg width="14" height="14" fill="currentColor" viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
+          </a>
+          <a href="#" style="width:34px;height:34px;border-radius:7px;background:rgba(255,255,255,0.07);display:flex;align-items:center;justify-content:center;color:rgba(255,255,255,0.6);text-decoration:none;" aria-label="Instagram" onmouseover="this.style.background='rgba(212,168,83,0.2)';this.style.color='#D4A853'" onmouseout="this.style.background='rgba(255,255,255,0.07)';this.style.color='rgba(255,255,255,0.6)'">
+            <svg width="14" height="14" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+          </a>
+        </div>
+      </div>
+      <div>
+        <p style="color:rgba(212,168,83,0.85);font-size:0.72rem;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;margin-bottom:1.25rem;">Quick Links</p>
+        <ul style="list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:0.65rem;">
+          <li><a href="#process" style="color:rgba(247,242,234,0.55);text-decoration:none;font-size:0.88rem;" onmouseover="this.style.color='rgba(247,242,234,0.9)'" onmouseout="this.style.color='rgba(247,242,234,0.55)'">Our Process</a></li>
+          <li><a href="#quote" style="color:rgba(247,242,234,0.55);text-decoration:none;font-size:0.88rem;" onmouseover="this.style.color='rgba(247,242,234,0.9)'" onmouseout="this.style.color='rgba(247,242,234,0.55)'">Get a Quote</a></li>
+          <li><a href="#quote" style="color:rgba(247,242,234,0.55);text-decoration:none;font-size:0.88rem;" onmouseover="this.style.color='rgba(247,242,234,0.9)'" onmouseout="this.style.color='rgba(247,242,234,0.55)'">Request a Quote</a></li>
+          <li><a href="#faq" style="color:rgba(247,242,234,0.55);text-decoration:none;font-size:0.88rem;" onmouseover="this.style.color='rgba(247,242,234,0.9)'" onmouseout="this.style.color='rgba(247,242,234,0.55)'">FAQ</a></li>
+        </ul>
+      </div>
+      <div>
+        <p style="color:rgba(212,168,83,0.85);font-size:0.72rem;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;margin-bottom:1.25rem;">Service Types</p>
+        <ul style="list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:0.65rem;">
+          <li><a href="#quote" style="color:rgba(247,242,234,0.55);text-decoration:none;font-size:0.88rem;" onmouseover="this.style.color='rgba(247,242,234,0.9)'" onmouseout="this.style.color='rgba(247,242,234,0.55)'">Single Stump</a></li>
+          <li><a href="#quote" style="color:rgba(247,242,234,0.55);text-decoration:none;font-size:0.88rem;" onmouseover="this.style.color='rgba(247,242,234,0.9)'" onmouseout="this.style.color='rgba(247,242,234,0.55)'">Multiple Stumps</a></li>
+          <li><a href="#quote" style="color:rgba(247,242,234,0.55);text-decoration:none;font-size:0.88rem;" onmouseover="this.style.color='rgba(247,242,234,0.9)'" onmouseout="this.style.color='rgba(247,242,234,0.55)'">Large Stumps</a></li>
+          <li><a href="#quote" style="color:rgba(247,242,234,0.55);text-decoration:none;font-size:0.88rem;" onmouseover="this.style.color='rgba(247,242,234,0.9)'" onmouseout="this.style.color='rgba(247,242,234,0.55)'">Restricted Access</a></li>
+          <li><a href="#quote" style="color:rgba(247,242,234,0.55);text-decoration:none;font-size:0.88rem;" onmouseover="this.style.color='rgba(247,242,234,0.9)'" onmouseout="this.style.color='rgba(247,242,234,0.55)'">Commercial Sites</a></li>
+        </ul>
+      </div>
+      <div>
+        <p style="color:rgba(212,168,83,0.85);font-size:0.72rem;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;margin-bottom:1.25rem;">Contact Us</p>
+        <ul style="list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:0.85rem;margin-bottom:1.5rem;">
+          <li style="display:flex;align-items:flex-start;gap:0.6rem;">
+            <svg width="16" height="16" fill="#D4A853" viewBox="0 0 24 24" style="flex-shrink:0;margin-top:1px;"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+            <a href="tel:0485666610" style="color:rgba(247,242,234,0.75);text-decoration:none;font-size:0.88rem;font-weight:500;">0485 666 610</a>
+          </li>
+          <li style="display:flex;align-items:flex-start;gap:0.6rem;">
+            <svg width="16" height="16" fill="#D4A853" viewBox="0 0 24 24" style="flex-shrink:0;margin-top:1px;"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+            <a href="mailto:sales@ecoloopstumpgrinding.com.au" style="color:rgba(247,242,234,0.75);text-decoration:none;font-size:0.85rem;">sales@ecoloopstumpgrinding.com.au</a>
+          </li>
+          <li style="display:flex;align-items:flex-start;gap:0.6rem;">
+            <svg width="16" height="16" fill="#D4A853" viewBox="0 0 24 24" style="flex-shrink:0;margin-top:1px;"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+            <span style="color:rgba(247,242,234,0.75);font-size:0.88rem;">Greater Brisbane, QLD</span>
+          </li>
+        </ul>
+        <a href="#quote" class="btn-gold" style="font-size:0.82rem;padding:0.6rem 1.25rem;">Get Free Quote</a>
+      </div>
+    </div>
+    <div style="border-top:1px solid rgba(255,255,255,0.07);padding-top:1.5rem;display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:0.75rem;">
+      <p style="color:rgba(247,242,234,0.3);font-size:0.78rem;">&#169; 2026 EcoLoop Stump Grinding. All rights reserved. ABN 00 000 000 000</p>
+      <div style="display:flex;gap:1.5rem;">
+        <a href="#" style="color:rgba(247,242,234,0.3);font-size:0.78rem;text-decoration:none;" onmouseover="this.style.color='rgba(247,242,234,0.7)'" onmouseout="this.style.color='rgba(247,242,234,0.3)'">Privacy Policy</a>
+        <a href="#" style="color:rgba(247,242,234,0.3);font-size:0.78rem;text-decoration:none;" onmouseover="this.style.color='rgba(247,242,234,0.7)'" onmouseout="this.style.color='rgba(247,242,234,0.3)'">Terms &amp; Conditions</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+  function toggleFaq(btn) {
+    const content = btn.nextElementSibling;
+    const icon = btn.querySelector('.faq-icon');
+    const isOpen = content.classList.contains('open');
+    document.querySelectorAll('.faq-content').forEach(c => c.classList.remove('open'));
+    document.querySelectorAll('.faq-icon').forEach(i => i.classList.remove('open'));
+    document.querySelectorAll('.faq-btn').forEach(b => b.setAttribute('aria-expanded', 'false'));
+    if (!isOpen) {
+      content.classList.add('open');
+      icon.classList.add('open');
+      btn.setAttribute('aria-expanded', 'true');
+    }
+  }
+
+  function renderStumpDiameterFields() {
+    const countValue = document.getElementById('q-stump-count').value;
+    const container = document.getElementById('q-stump-size-fields');
+    const note = document.getElementById('q-stump-size-note');
+
+    container.innerHTML = '';
+    if (countValue === 'more_than_5') {
+      note.style.display = 'block';
+      return;
+    }
+
+    note.style.display = 'none';
+    const count = Number.parseInt(countValue, 10);
+    if (!Number.isInteger(count) || count < 1 || count > 5) {
+      return;
+    }
+
+    const grid = document.createElement('div');
+    grid.className = 'form-2col';
+    grid.style.cssText = 'display:grid;grid-template-columns:1fr 1fr;gap:1rem;';
+
+    for (let i = 1; i <= count; i += 1) {
+      const fieldWrap = document.createElement('div');
+      const label = document.createElement('label');
+      label.className = 'form-label';
+      label.setAttribute('for', 'q-stump-diameter-' + i);
+      label.textContent = 'Stump ' + i + ' Diameter *';
+
+      const select = document.createElement('select');
+      select.className = 'form-input';
+      select.id = 'q-stump-diameter-' + i;
+      select.name = 'q-stump-diameter-' + i;
+      select.required = true;
+      select.innerHTML = [
+        '<option value="">&#8212; Select diameter &#8212;</option>',
+        '<option value="<200mm">&lt;200mm</option>',
+        '<option value="<300mm">&lt;300mm</option>',
+        '<option value="<400mm">&lt;400mm</option>',
+        '<option value="larger_than_500mm">Larger than 500mm</option>'
+      ].join('');
+
+      fieldWrap.appendChild(label);
+      fieldWrap.appendChild(select);
+      grid.appendChild(fieldWrap);
+    }
+
+    container.appendChild(grid);
+    applyResponsive();
+  }
+
+  // ── Photo handling ─────────────────────────────────────────────────────────
+  window._encodedPhotos = [];
+
+  async function handlePhotoSelect(input) {
+    const files = Array.from(input.files).slice(0, 5);
+    const previewContainer = document.getElementById('q-photo-previews');
+    const label = document.getElementById('q-photo-text');
+    previewContainer.innerHTML = '';
+    window._encodedPhotos = [];
+
+    if (files.length === 0) {
+      previewContainer.style.display = 'none';
+      label.textContent = 'Click to upload photos';
+      return;
+    }
+
+    label.textContent = 'Processing ' + files.length + ' photo' + (files.length > 1 ? 's' : '') + '...';
+    previewContainer.style.display = 'flex';
+
+    for (const file of files) {
+      try {
+        const b64 = await resizeImageToBase64(file, 1024);
+        window._encodedPhotos.push(b64);
+        const thumb = document.createElement('div');
+        thumb.style.cssText = 'position:relative;width:72px;height:72px;border-radius:6px;overflow:hidden;border:1.5px solid #ddd5c8;flex-shrink:0;';
+        thumb.innerHTML = '<img src="' + b64 + '" style="width:100%;height:100%;object-fit:cover;" />';
+        previewContainer.appendChild(thumb);
+      } catch (_) { /* skip unreadable file */ }
+    }
+
+    label.textContent = window._encodedPhotos.length + ' photo' + (window._encodedPhotos.length > 1 ? 's' : '') + ' ready to upload';
+    input.value = '';
+  }
+
+  function resizeImageToBase64(file, maxPx) {
+    return new Promise((resolve, reject) => {
+      const reader = new FileReader();
+      reader.onerror = reject;
+      reader.onload = evt => {
+        const img = new Image();
+        img.onerror = reject;
+        img.onload = () => {
+          let w = img.width, h = img.height;
+          if (w > maxPx || h > maxPx) {
+            if (w > h) { h = Math.round(h * maxPx / w); w = maxPx; }
+            else { w = Math.round(w * maxPx / h); h = maxPx; }
+          }
+          const canvas = document.createElement('canvas');
+          canvas.width = w; canvas.height = h;
+          canvas.getContext('2d').drawImage(img, 0, 0, w, h);
+          resolve(canvas.toDataURL('image/jpeg', 0.82));
+        };
+        img.src = evt.target.result;
+      };
+      reader.readAsDataURL(file);
+    });
+  }
+
+  // ── Quote form submit ─────────────────────────────────────────────────────
+  async function handleQuoteSubmit(e) {
+    e.preventDefault();
+    const btn = e.target.querySelector('button[type="submit"]');
+    btn.disabled = true;
+    btn.innerHTML = '<svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24" style="animation:spin 0.8s linear infinite"><path d="M12 4V2A10 10 0 0 0 2 12h2a8 8 0 0 1 8-8z"/></svg>&nbsp;Sending...';
+
+    const name        = document.getElementById('q-name').value.trim();
+    const phone       = document.getElementById('q-phone').value.trim();
+    const email       = document.getElementById('q-email').value.trim();
+    const address     = document.getElementById('q-address').value.trim();
+    const stumpCount  = document.getElementById('q-stump-count').value;
+    const message     = document.getElementById('q-message').value.trim();
+    const accessType  = document.getElementById('q-access-select').value || 'unsure';
+    const photos      = window._encodedPhotos || [];
+
+    const stumpDiameterValues = [];
+    if (stumpCount && stumpCount !== 'more_than_5') {
+      for (let i = 1; i <= Number.parseInt(stumpCount, 10); i += 1) {
+        const val = document.getElementById('q-stump-diameter-' + i)?.value || '';
+        if (val) stumpDiameterValues.push(val);
+      }
+    }
+
+    const bookingData = {
+      name, email, phone,
+      address: address || 'Not provided',
+      stump_count: stumpCount || '',
+      stump_diameter: stumpDiameterValues.length
+        ? stumpDiameterValues.join(', ')
+        : (stumpCount === 'more_than_5' ? 'More than 5 stumps' : ''),
+      access_type: accessType,
+      photos,
+      notes: [
+        stumpCount ? 'Number of stumps: ' + (stumpCount === 'more_than_5' ? 'More than 5' : stumpCount) : '',
+        message
+      ].filter(Boolean).join('\n')
+    };
+
+    try {
+      const res = await fetch('/api/bookings', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(bookingData)
+      });
+      const data = await res.json();
+      if (!res.ok) throw new Error(data.error || 'Submission failed');
+
+      btn.innerHTML = '&#10003; Quote Request Sent!';
+      btn.style.background = 'linear-gradient(135deg,#2d7a52,#4e9870)';
+      btn.style.color = '#fff';
+      window._encodedPhotos = [];
+      document.getElementById('q-photo-previews').innerHTML = '';
+      const photoText = document.getElementById('q-photo-text');
+      if (photoText) photoText.textContent = 'Click to upload photos';
+      alert('Thank you, ' + name + '!\n\nYour quote request has been received. You\'ll receive an SMS confirmation shortly.\n\nWe\'ll be in touch within 24 hours with your fixed-price quote.');
+      e.target.reset();
+      renderStumpDiameterFields();
+      setTimeout(() => {
+        btn.disabled = false;
+        btn.innerHTML = '<svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"/></svg> Submit My Quote Request';
+        btn.style.background = '';
+        btn.style.color = '';
+      }, 4000);
+    } catch (err) {
+      alert('Error: ' + err.message + '\n\nPlease call us directly on 0485 666 610.');
+      btn.disabled = false;
+      btn.innerHTML = '<svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"/></svg> Submit My Quote Request';
+    }
+  }
+
+  function applyResponsive() {
+    const w = window.innerWidth;
+    const mobile = w < 768;
+    document.querySelectorAll('.md-grid-3').forEach(el => { el.style.gridTemplateColumns = mobile ? '1fr' : 'repeat(3,1fr)'; });
+    document.querySelectorAll('.quote-grid').forEach(el => { el.style.gridTemplateColumns = mobile ? '1fr' : '280px 1fr'; });
+    document.querySelectorAll('.why-grid').forEach(el => { el.style.gridTemplateColumns = mobile ? '1fr' : '1fr 1fr'; });
+    document.querySelectorAll('.about-grid').forEach(el => { el.style.gridTemplateColumns = mobile ? '1fr' : '1fr 1fr'; });
+    document.querySelectorAll('.footer-grid').forEach(el => { el.style.gridTemplateColumns = mobile ? '1fr 1fr' : '1.4fr 1fr 1.2fr 1.2fr'; });
+    document.querySelectorAll('.form-2col').forEach(el => { el.style.gridTemplateColumns = mobile ? '1fr' : '1fr 1fr'; });
+  }
+
+  applyResponsive();
+  renderStumpDiameterFields();
+  window.addEventListener('resize', applyResponsive);
+
+  document.querySelectorAll('a[href^="#"]').forEach(a => {
+    a.addEventListener('click', e => {
+      const target = document.querySelector(a.getAttribute('href'));
+      if (target) { e.preventDefault(); target.scrollIntoView({ behavior: 'smooth', block: 'start' }); }
+    });
+  });
+</script>
+</body>
+</html>

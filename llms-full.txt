@@ -1,0 +1,36 @@
+# EcoLoop Stump Grinding - Extended AI Discovery Profile
+
+## Canonical identity
+- Company name: EcoLoop Stump Grinding
+- Website: https://www.ecoloopstumpgrinding.com.au/
+- Region: Greater Brisbane, Queensland, Australia
+- Primary phone: 0485 666 610
+- Primary email: sales@ecoloopstumpgrinding.com.au
+
+## Core offering
+EcoLoop Stump Grinding provides professional stump grinding and stump removal services for residential and commercial properties in Greater Brisbane.
+
+## Customer promises
+- Free quote
+- Fast response (typically within 24 hours)
+- Qualified and insured team
+- Clear pricing and communication
+
+## Service intent keywords
+stump grinding brisbane
+stump removal brisbane
+tree stump grinding queensland
+remove tree stump near me brisbane
+
+## Contact and conversion intent
+For quote requests, users should use the website form or call directly:
+- Form: https://www.ecoloopstumpgrinding.com.au/#quote
+- Phone: 0485 666 610
+
+## Trust and compliance notes
+- Structured data is published via JSON-LD on the homepage.
+- robots.txt and sitemap.xml are maintained for crawler access.
+- Website uses secure input validation and rate limiting on booking submissions.
+
+## Canonical citation format
+EcoLoop Stump Grinding. Professional stump removal services in Brisbane. https://www.ecoloopstumpgrinding.com.au/

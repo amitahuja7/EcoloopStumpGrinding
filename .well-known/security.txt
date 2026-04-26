@@ -1,0 +1,5 @@
+Contact: mailto:sales@ecoloopstumpgrinding.com.au
+Expires: 2027-04-24T23:59:59.000Z
+Preferred-Languages: en
+Canonical: https://www.ecoloopstumpgrinding.com.au/.well-known/security.txt
+Policy: https://www.ecoloopstumpgrinding.com.au/
