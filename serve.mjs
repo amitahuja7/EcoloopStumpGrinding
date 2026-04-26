@@ -13,10 +13,11 @@ const app = express();
 const PORT = Number.parseInt(process.env.PORT || "3003", 10);
 const BASE_URL = process.env.BASE_URL || `http://localhost:${PORT}`;
 
-const ADMIN_EMAIL = process.env.ADMIN_EMAIL || "sales@ecoloopstumpgrinding.com.au";
+const ADMIN_EMAIL = process.env.ADMIN_EMAIL || "ecoloopstumpgrinding@gmail.com";
 const EMAIL_USER = process.env.EMAIL_USER || ADMIN_EMAIL;
 const EMAIL_PASSWORD = process.env.EMAIL_PASSWORD || "";
 const EMAIL_NOTIFICATIONS_ENABLED = Boolean(EMAIL_USER && EMAIL_PASSWORD);
+const ADMIN_EMAIL_SAME_AS_SENDER = ADMIN_EMAIL.toLowerCase() === EMAIL_USER.toLowerCase();
 const ADMIN_PHONE = process.env.ADMIN_PHONE || "";
 
 const GOOGLE_SHEETS_WEBHOOK_URL = process.env.GOOGLE_SHEETS_WEBHOOK_URL || "";
@@ -203,9 +204,10 @@ async function sendAdminEmail(lead) {
     return { sent: false, reason: "Email credentials are not configured" };
   }
   try {
-    await emailTransporter.sendMail({
+    const info = await emailTransporter.sendMail({
       from: `"EcoLoop Stump Grinding" <${EMAIL_USER}>`,
       to: ADMIN_EMAIL,
+      replyTo: lead.email,
       subject: `New Quote Request ${lead.id} - ${lead.name}`,
       html: `
         <h2>New Quote Request</h2>
@@ -224,7 +226,15 @@ async function sendAdminEmail(lead) {
         <p><strong>Notes</strong><br/>${(lead.notes || "-").replace(/\n/g, "<br/>")}</p>
       `
     });
-    return { sent: true };
+    return {
+      sent: true,
+      messageId: info.messageId,
+      accepted: info.accepted,
+      rejected: info.rejected,
+      note: ADMIN_EMAIL_SAME_AS_SENDER
+        ? "Admin email uses the same Gmail account as sender; check Sent/All Mail or set a different ADMIN_EMAIL for inbox alerts."
+        : undefined
+    };
   } catch (err) {
     console.error("Admin email error:", err.message);
     return { sent: false, reason: err.message };
@@ -388,6 +398,9 @@ app.listen(PORT, () => {
   console.log("Running in Google-Sheets-only mode");
   if (!EMAIL_NOTIFICATIONS_ENABLED) {
     console.log("Warning: Email notifications are disabled. Set EMAIL_USER and EMAIL_PASSWORD in .env.");
+  }
+  if (ADMIN_EMAIL_SAME_AS_SENDER) {
+    console.log("Warning: ADMIN_EMAIL matches EMAIL_USER. Gmail may show admin notifications in Sent/All Mail instead of Inbox.");
   }
   if (!GOOGLE_SHEETS_WEBHOOK_URL || !ENABLE_SHEETS_SYNC) {
     console.log("Warning: Google Sheets sync is not fully configured; bookings will still be accepted.");
