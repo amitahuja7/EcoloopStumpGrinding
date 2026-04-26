@@ -255,7 +255,7 @@ async function sendCustomerAcknowledgement(lead) {
         <h2>Thanks for your enquiry, ${lead.name}</h2>
         <p style="font-size:16px;">Your quote reference is: <strong style="color:#2d7a2d;">${lead.id}</strong></p>
         <p>We have received your quote request and will get back to you within 24 hours.</p>
-        <p>If urgent, call <a href="tel:0485666610">0485 666 610</a>.</p>
+        <p>If urgent, call <a href="tel:0485066663">0485066663</a>.</p>
       `
     });
     return { sent: true };
