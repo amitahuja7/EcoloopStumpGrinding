@@ -114,6 +114,8 @@ const emailTransporter = EMAIL_NOTIFICATIONS_ENABLED
   ? nodemailer.createTransport({
     service: "gmail",
     family: 4,
+    connectionTimeout: 15000,
+    socketTimeout: 15000,
     auth: {
       user: EMAIL_USER,
       pass: EMAIL_PASSWORD
@@ -366,10 +368,13 @@ app.post("/api/bookings", rateLimitBookings, async (req, res) => {
     console.warn(`Google Sheets sync skipped/failed for lead #${lead.id}: ${sheetResult.reason}`);
   }
 
-  const [adminEmailResult, customerEmailResult] = await Promise.all([
+  // Send emails in the background (don't block the response)
+  Promise.all([
     sendAdminEmail(lead),
     sendCustomerAcknowledgement(lead)
-  ]);
+  ]).catch(err => {
+    console.error("Background email error:", err.message);
+  });
 
   res.json({
     success: true,
@@ -377,10 +382,9 @@ app.post("/api/bookings", rateLimitBookings, async (req, res) => {
     message: "Quote request submitted successfully",
     sheetsSync: sheetResult,
     notifications: {
-      adminEmail: adminEmailResult,
-      customerEmail: customerEmailResult,
       adminSms: adminSmsResult,
-      customerSms: customerSmsResult
+      customerSms: customerSmsResult,
+      email: "Sent in background"
     }
   });
 });
