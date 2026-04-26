@@ -184,7 +184,8 @@ function buildAdminSmsMessage(lead) {
 }
 
 function buildCustomerSmsMessage(lead) {
-  return `Hi ${lead.name}! Your EcoLoop Stump Grinding quote request has been received. Ref: ${lead.id}. We'll be in touch within 24hrs with your fixed-price quote. Questions? Call 0485 666 610.`;
+  const contactPhone = ADMIN_PHONE || "0430858007";
+  return `Hi ${lead.name}! Your EcoLoop Stump Grinding quote request has been received. We'll be in touch within 24hrs with your fixed-price quote. Questions? Call ${contactPhone}.`;
 }
 
 async function sendSMS(toPhone, message) {
@@ -252,10 +253,9 @@ async function sendCustomerAcknowledgement(lead) {
     await emailTransporter.sendMail({
       from: `"EcoLoop Stump Grinding" <${EMAIL_USER}>`,
       to: lead.email,
-      subject: `Quote Request Received - ${lead.id}`,
+      subject: "Quote Request Received",
       html: `
         <h2>Thanks for your enquiry, ${lead.name}</h2>
-        <p style="font-size:16px;">Your quote reference is: <strong style="color:#2d7a2d;">${lead.id}</strong></p>
         <p>We have received your quote request and will get back to you within 24 hours.</p>
         <p>If urgent, call <a href="tel:0485066663">0485066663</a>.</p>
       `
