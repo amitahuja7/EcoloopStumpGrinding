@@ -113,6 +113,7 @@ function rateLimitBookings(req, res, next) {
 const emailTransporter = EMAIL_NOTIFICATIONS_ENABLED
   ? nodemailer.createTransport({
     service: "gmail",
+    family: 4,
     auth: {
       user: EMAIL_USER,
       pass: EMAIL_PASSWORD
