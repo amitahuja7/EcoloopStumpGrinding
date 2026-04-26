@@ -184,8 +184,7 @@ function buildAdminSmsMessage(lead) {
 }
 
 function buildCustomerSmsMessage(lead) {
-  const contactPhone = ADMIN_PHONE || "0430858007";
-  return `Hi ${lead.name}! Your EcoLoop Stump Grinding quote request has been received. We'll be in touch within 24hrs with your fixed-price quote. Questions? Call ${contactPhone}.`;
+  return `Hi ${lead.name}! Your EcoLoop Stump Grinding quote request has been received. We'll be in touch within 24hrs with your fixed-price quote. Questions? Call 0485066663.`;
 }
 
 async function sendSMS(toPhone, message) {
