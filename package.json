@@ -2,10 +2,10 @@
   "name": "ecoloopstumpgrindingwebsite",
   "version": "1.0.0",
   "description": "EcoLoop Stump Grinding - Professional Stump Removal Brisbane",
-  "main": "serve.mjs",
+  "main": "index.js",
   "type": "module",
   "scripts": {
-    "start": "node serve.mjs",
+    "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
